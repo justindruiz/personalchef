@@ -2,7 +2,12 @@
 class Chef
   attr_accessor :name
 
+  def initialize( name = "")
+    @name = name
+  end
+
   def make_toast(how_dark)
+    puts "Hi my name is #{@name}"
     puts "Your toast is done. It's #{how_dark}."
   end
 
